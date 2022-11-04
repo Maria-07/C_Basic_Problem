@@ -1,14 +1,16 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(){
-    int a,b,c;
+int main()
+{
 
-    scanf("%d%d%d",&a,&b,&c);
-    if(a>0 && b>0 && c>0){
-        (a==b && a==c)? printf("Yes\n"):printf("No\n");
+    int arr[5], i, sum = 0;
+    for (i = 1; i <= 5; i += 1)
+    {
+        arr[i - 1] = i - 1;
     }
-    else{
-        printf("No\n");
+    for (i = 0; i < 5; i += 1)
+    {
+        printf("%d ", arr[i]);
     }
-return 0;
+    return 0;
 }
